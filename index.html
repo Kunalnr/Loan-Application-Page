@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Loan Page</h2>
+      </div>
+      <form action="confirm.html" method="get" class="form" id="form">
+        <div class="form-control">
+          <label>Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Enter your full name"
+            autocomplete="off"
+            required
+            name="fullName"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label>Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email id"
+            autocomplete="off"
+            required
+            name="email"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label>Pan Number</label>
+          <input
+            type="text"
+            id="pan"
+            placeholder="Enter your Pan Number"
+            autocomplete="off"
+            required
+            name="pan"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label>Loan Amount</label>
+          <input
+            type="number"
+            id="loanamount"
+            placeholder="Enter your Loan Amount"
+            autocomplete="off"
+            required
+            name="amount"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label>Estimated EMI <span style="font-size: smaller;">(Interest Rate: 8.5% / Tenure: 15 years)</span></label>
+          <input
+            type="text"
+            id="emi"
+            placeholder="Estimated EMI"
+            autocomplete="off"
+            readonly
+          />
+        </div>
+       <input type="submit" value="Submit" class="btn">
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="cbody" onload="displayConfirmation()">
+    <h1>Loan Application Confirmation</h1>
+    <div class="confirm">
+      <div>
+        <p id="confirmationMessage"></p>
+      </div>
+      <div id="otpForm">
+        <!-- <span id="spantext">Enter OTP: </span>
+          <input type="text" id="otp" name="otp" required />
+          <span id="otpError" class="error"></span>
+          <button type="submit" id="submitbtn">Validate</button> -->
+        <input type="text" id="otp" maxlength="4" required />
+        <button type="button" class="otpbtn" onclick="validateOTP()">
+          Validate
+        </button>
+      </div>
+    </div>
+    <script src="confirm.js"></script>
+  </body>
+</html>
